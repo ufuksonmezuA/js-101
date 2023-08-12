@@ -131,12 +131,109 @@
 
 //     console.log("Öğrenciler Array'i Güncellendi", ogrenciler);
 
-let meyveler = ["Kavun","Karpuz","Üzüm","Kiraz","Şeftali"];
-meyveler.push = ("Muz");
-const ilkmeyve = meyveler[0]
-console.log(meyveler);
-console.log("ilk Meyve:", ilkmeyve);
-const meyvesayisi = meyveler.length;
-const sonmeyve = meyveler[meyvesayisi - 1];
-console.log("Son Meyve:", sonmeyve);
+// let meyveler = ["Kavun","Karpuz","Üzüm","Kiraz","Şeftali"];
+// meyveler.push = ("Muz");
+// const ilkmeyve = meyveler[0]
+// console.log(meyveler);
+// console.log("ilk Meyve:", ilkmeyve);
+// const meyvesayisi = meyveler.length;
+// const sonmeyve = meyveler[meyvesayisi - 1];
+// console.log("Son Meyve:", sonmeyve);
 
+
+// ################################################################
+            //////////////// 12-08-2023 ////////////////
+// ################################################################
+
+// const array_vareable = [1,5,10,15,"hello",10,20];
+// const arraylength = array_vareable.length;
+// const last_element = array_vareable[arraylength - 1];
+
+// let new_array = [];
+
+// console.log(array_vareable);
+// // console.log("ilk eleman: ",array_vareable[0]);
+// // console.log("toplam eleman sayısı: ",array_vareable.length);
+// // console.log("son eleman: ", last_element);
+
+// array_vareable.map(t => new_array.push(t));
+// array_vareable.map((t, index) => console.log("şu an ki eleman: ", t + " ve " + index));
+
+// const boolean_variable_1 = true;
+// const boolean_variable_2 = false;
+
+// /* OPERATÖRLER */
+// const kontrol_1 = (3 !== 5);           //       !==  -> eşit değildir
+// const kontrol_2 = (3 == 5);            //        ==  -> eşittir
+// const kontrol_3 = (3 > 5);             //         >  -> büyüktür
+// const kontrol_4 = (3 < 5);             //         <  -> küçüktür
+
+// const kontrol_5 = (15 < 20 && 3 < 4);  //         && -> ve
+// const kontrol_6 = (6 < 7 || 8 < 3);    //         || -> veya
+// const kontrol_7 = !kontrol_6;
+
+// console.log("Kontrol sonucu ", kontrol_6);
+
+
+// const yeni_sayi = 5;
+
+
+
+// if(yeni_sayi  == 4)
+// {
+//     console.log("Kontrol doğru, if blogu");
+// }
+
+// else if (yeni_sayi  == 5)
+// {
+//     console.log("Kontrol doğru, else if blogu");
+// }
+
+// else
+// {
+//     console.log("Kontrol yanlış");
+// }
+
+
+let animals = ["kedi", "köpek", "at", "köpek"];
+let animals_length = animals.length;
+
+if(animals_length > 3)
+{
+    console.log("Toplam eleman sayısı 3 büyüktür");
+}
+
+else if (animals_length == 3)
+{
+    console.log("Toplam eleman sayısı 3'e eşit");
+}
+
+else
+{
+    console.log("Toplam eleman sayısı 3 küçüktür");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ################################################################
+            //////////////// 13-08-2023 ////////////////
+// ################################################################
