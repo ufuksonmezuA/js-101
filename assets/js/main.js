@@ -195,30 +195,40 @@
 // }
 
 
-let animals = ["kedi", "köpek", "at", "köpek"];
-let animals_length = animals.length;
+// let animals = ["kedi", "köpek", "at", "köpek"];
+// let animals_length = animals.length;
 
-if(animals_length > 3)
-{
-    console.log("Toplam eleman sayısı 3 büyüktür");
-}
+// if(animals_length > 3)
+// {
+//     console.log("Toplam eleman sayısı 3 büyüktür");
+// }
 
-else if (animals_length == 3)
-{
-    console.log("Toplam eleman sayısı 3'e eşit");
-}
+// else if (animals_length == 3)
+// {
+//     console.log("Toplam eleman sayısı 3'e eşit");
+// }
 
-else
-{
-    console.log("Toplam eleman sayısı 3 küçüktür");
-}
-
-
+// else
+// {
+//     console.log("Toplam eleman sayısı 3 küçüktür");
+// }
 
 
+// const yeni_degisken = "selam";
+// if(yeni_degisken == "selam") console.log("sart doğtudur")
+// else console.log("sart yanlıs");
 
+const  sayilar = [1,3,8,10,20,25];
 
+let sayilar_9dan_buyuk = [];
 
+sayilar.map(sayi => {
+    if(sayi > 9) {
+        sayilar_9dan_buyuk.push(sayi);
+    }
+});
+
+console.log("9'dan büyük sayılar: ", sayilar_9dan_buyuk);
 
 
 
