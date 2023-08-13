@@ -218,32 +218,164 @@
 // if(yeni_degisken == "selam") console.log("sart doğtudur")
 // else console.log("sart yanlıs");
 
-const  sayilar = [1,3,8,10,20,25];
+// const  sayilar = [1,3,8,10,20,25];
 
-let sayilar_9dan_buyuk = [];
+// let sayilar_9dan_buyuk = [];
 
-sayilar.map(sayi => {
-    if(sayi > 9) {
-        sayilar_9dan_buyuk.push(sayi);
-    }
-});
+// sayilar.map(sayi => {
+//     if(sayi > 9) {
+//         sayilar_9dan_buyuk.push(sayi);
+//     }
+// });
 
-console.log("9'dan büyük sayılar: ", sayilar_9dan_buyuk);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log("9'dan büyük sayılar: ", sayilar_9dan_buyuk);
 
 // ################################################################
             //////////////// 13-08-2023 ////////////////
 // ################################################################
+
+
+// //  ##############  FIND && FINDINDEX  ##############
+
+// const ages = [15, 11, 18, 27, 39, 55, 20, 6, 13];
+
+// console.log(ages);
+
+// const finded_age = ages.find(age => age > 20); // x > 20 gibi şartı sağlayan ilk elemanı döner.
+
+// const finded_index = ages.findIndex(y => y > 20); // y > 20 şartını sağlayan ilk elemanın index numarısnı döner.
+
+// console.log("20'den büyük olan ilk eleman:",finded_age);
+// console.log("20'den büyük olan ilk elemanın index'i:",finded_index);
+
+
+// // ################################################################
+
+// //  ##############  SOME  ############## 
+// const names = ["Ali", "Ahmet", "Ayşe", "Mehmet", "Mustafa"];
+// const areAllString = names.some(z => typeof z === "number"); //elemanların bir tanesi yazdığmız şartı sağlıyor ise true döner.
+// const isBiggerThen18 = ages.some(yas => yas > 18);
+
+// console.log("some methodu sonucu:", areAllString);
+// console.log("18'den büyük eleman var mı:", isBiggerThen18);
+
+// //  ##############  EVERY  ############## 
+
+// const every_check = names.every(i => typeof i === 'string'); //elemanların hepsi yazdığmız şartı sağlıyor ise true döner.
+// console.log("Hepsi string tipinde mi? ", every_check);
+
+
+// // ################################################################
+
+// //  ##############  FILTER   ##############
+// const new_ages = ages.filter(a => a > 18); // şartı sağlayan ilk elemanları yeni bir array içerisinde toplar.(Tek eleman olsa bile)
+// console.log("18'den büyük elemanlar:", new_ages);
+
+// ages.filter(b => b > 15).map(b => console.log("eleman:", b));
+
+
+
+// // #######################  ARRAY DECONSTRUCTION   #########################################
+
+// // const first_name = names[0];
+// // console.log("ilk eleman", first_name);
+
+// // const second_name = names[1];
+// // console.log("ikinci eleman", second_name);
+
+// let [first_name, second_name, third_name, forth_name] = names; //arraydeki elemanlara erişmek için kullanılan bir kısayol
+// console.log("ilk eleman:", first_name);
+
+
+// //const ages = [15, 11, 18, 27, 39, 55, 20, 6, 13];
+
+// let [first_number, second_number, third_number, ...rest] = ages; //
+// console.log(first_number, second_number, third_number, rest);
+
+
+// ################################################################
+
+//  ##############  OBJECTS   ##############
+
+// const ogrenci_1 = {
+//     isim: "Canberk",
+//     soyisim: "Beren",
+//     yas: 26,
+//     mezun: true
+// }
+
+// // console.log("Birinci öğrenci", ogrenci_1);
+
+
+// const ogrenciler = [ // JSON
+//     {
+//         isim: "Canberk",
+//         soyisim: "Beren",
+//         age: 26
+//     },
+//     {
+//         isim: "Ahmet",
+//         soyisim: "Yılmaz",
+//         age: 30
+//     },
+//     {
+//         isim: "Ayşe",
+//         soyisim: "Yıldırm",
+//         age: 36
+//     },
+//     {
+//         isim: "Fatma",
+//         soyisim: "Naz",
+//         age: 13
+//     }
+// ]
+// const filtered_array = ogrenciler.filter(ogrenci => ogrenci.age > 35);
+// console.log("Yaşı 35'den büyük olan öğrenciler: ", filtered_array);
+
+
+// const nested_object =  {
+//     isim: "Ali Yağız",
+//     soyisim: "Tar",
+//     yas: 29,
+//     notlar: {
+//         matematik: 100,
+//         felsefe: 100,  
+//     }
+// }
+
+
+
+const ogrenciler = [
+    {
+        isim: "ali",
+        notlar: {
+            matematik: 50
+        }
+    },
+    {
+        isim: "veli",
+        notlar: {
+            matematik: 60
+        }
+    },
+    {
+        isim: "zeynep",
+        notlar: {
+            matematik: 30
+        }
+    },
+    {
+        isim: "ayşe",
+        notlar: {
+            matematik: 40
+        }
+    },
+    {
+        isim: "hasan",
+        notlar: {
+            matematik: 70
+        }
+    },
+]
+const filtered_array = ogrenciler.filter(ogrenci => ogrenci.notlar.matematik < 50);
+console.log("Matematik sonucu 50'nin altın da olan öğreciler ", filtered_array);
