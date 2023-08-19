@@ -1,5 +1,5 @@
 // ################################################################
-            //////////////// 05-08-2023 ////////////////
+            // 05-08-2023 //
 // ################################################################
 
 // console.log("Merhaba Javascript");
@@ -58,7 +58,7 @@
 // console.log(newVaraible);
 
 // ################################################################
-    //////////////// DEĞİŞKEN OLUŞTURMA DEVAM ////////////////
+            // DEĞİŞKEN OLUŞTURMA DEVAM //
 // ################################################################
 
 
@@ -88,7 +88,7 @@
 // console.log("ilk ve son eleman çarpım sonucu:", calc);
 
 // ################################################################
-            //////////////// 06-08-2023 ////////////////
+            // 06-08-2023 //
 // ################################################################
 
 // const x = 50.124;
@@ -142,7 +142,7 @@
 
 
 // ################################################################
-            //////////////// 12-08-2023 ////////////////
+            // 12-08-2023 //
 // ################################################################
 
 // const array_vareable = [1,5,10,15,"hello",10,20];
@@ -152,9 +152,9 @@
 // let new_array = [];
 
 // console.log(array_vareable);
-// // console.log("ilk eleman: ",array_vareable[0]);
-// // console.log("toplam eleman sayısı: ",array_vareable.length);
-// // console.log("son eleman: ", last_element);
+// console.log("ilk eleman: ",array_vareable[0]);
+// console.log("toplam eleman sayısı: ",array_vareable.length);
+// console.log("son eleman: ", last_element);
 
 // array_vareable.map(t => new_array.push(t));
 // array_vareable.map((t, index) => console.log("şu an ki eleman: ", t + " ve " + index));
@@ -163,7 +163,7 @@
 // const boolean_variable_2 = false;
 
 // /* OPERATÖRLER */
-// const kontrol_1 = (3 !== 5);           //       !==  -> eşit değildir
+// const kontrol_1 = (3 !== 5);            /       !==  -> eşit değildir
 // const kontrol_2 = (3 == 5);            //        ==  -> eşittir
 // const kontrol_3 = (3 > 5);             //         >  -> büyüktür
 // const kontrol_4 = (3 < 5);             //         <  -> küçüktür
@@ -231,11 +231,11 @@
 // console.log("9'dan büyük sayılar: ", sayilar_9dan_buyuk);
 
 // ################################################################
-            //////////////// 13-08-2023 ////////////////
+            // 13-08-2023 //
 // ################################################################
 
 
-// //  ##############  FIND && FINDINDEX  ##############
+//  ##############  FIND && FINDINDEX  ##############
 
 // const ages = [15, 11, 18, 27, 39, 55, 20, 6, 13];
 
@@ -249,9 +249,9 @@
 // console.log("20'den büyük olan ilk elemanın index'i:",finded_index);
 
 
-// // ################################################################
+// ################################################################
 
-// //  ##############  SOME  ############## 
+//  ##############  SOME  ############## 
 // const names = ["Ali", "Ahmet", "Ayşe", "Mehmet", "Mustafa"];
 // const areAllString = names.some(z => typeof z === "number"); //elemanların bir tanesi yazdığmız şartı sağlıyor ise true döner.
 // const isBiggerThen18 = ages.some(yas => yas > 18);
@@ -259,15 +259,15 @@
 // console.log("some methodu sonucu:", areAllString);
 // console.log("18'den büyük eleman var mı:", isBiggerThen18);
 
-// //  ##############  EVERY  ############## 
+//  ##############  EVERY  ############## 
 
 // const every_check = names.every(i => typeof i === 'string'); //elemanların hepsi yazdığmız şartı sağlıyor ise true döner.
 // console.log("Hepsi string tipinde mi? ", every_check);
 
 
-// // ################################################################
+// ################################################################
 
-// //  ##############  FILTER   ##############
+//  ##############  FILTER   ##############
 // const new_ages = ages.filter(a => a > 18); // şartı sağlayan ilk elemanları yeni bir array içerisinde toplar.(Tek eleman olsa bile)
 // console.log("18'den büyük elemanlar:", new_ages);
 
@@ -275,19 +275,19 @@
 
 
 
-// // #######################  ARRAY DECONSTRUCTION   #########################################
+// #######################  ARRAY DECONSTRUCTION   #########################################
 
-// // const first_name = names[0];
-// // console.log("ilk eleman", first_name);
+// const first_name = names[0];
+// console.log("ilk eleman", first_name);
 
-// // const second_name = names[1];
-// // console.log("ikinci eleman", second_name);
+// const second_name = names[1];
+// console.log("ikinci eleman", second_name);
 
 // let [first_name, second_name, third_name, forth_name] = names; //arraydeki elemanlara erişmek için kullanılan bir kısayol
 // console.log("ilk eleman:", first_name);
 
 
-// //const ages = [15, 11, 18, 27, 39, 55, 20, 6, 13];
+//const ages = [15, 11, 18, 27, 39, 55, 20, 6, 13];
 
 // let [first_number, second_number, third_number, ...rest] = ages; //
 // console.log(first_number, second_number, third_number, rest);
@@ -304,7 +304,7 @@
 //     mezun: true
 // }
 
-// // console.log("Birinci öğrenci", ogrenci_1);
+// console.log("Birinci öğrenci", ogrenci_1);
 
 
 // const ogrenciler = [ // JSON
@@ -343,39 +343,137 @@
 //     }
 // }
 
+// const ogrenciler = [
+//     {
+//         isim: "Ali",
+//         notlar: {
+//             matematik: 50
+//         }
+//     },
+//     {
+//         isim: "Veli",
+//         notlar: {
+//             matematik: 60
+//         }
+//     },
+//     {
+//         isim: "Zeynep",
+//         notlar: {
+//             matematik: 30
+//         }
+//     },
+//     {
+//         isim: "Ayşe",
+//         notlar: {
+//             matematik: 40
+//         }
+//     },
+//     {
+//         isim: "Hasan",
+//         notlar: {
+//             matematik: 70
+//         }
+//     },
+// ]
+// const filtered_array = ogrenciler.filter(ogrenci => ogrenci.notlar.matematik < 50);
+// console.log("Matematik sınav sonucu 50'nin altın da olan öğreciler: ", filtered_array);
+
+// ################################################################
+                        // 19-08-2023 //
+// ################################################################
+
+// const child_age = 15;
+
+// if (child_age > 18) {
+//     console.log("Kampayadan muaf");
+// }
+// else if (child_age == 13 ) {
+//     console.log("Extra kampanya")
+// }
+// else {
+//     console.log("Standart Kampanya");
+// }
+
+// const age_number = 15;
+// switch(age_number) {
+//     case 15:
+//         console.log("Yaş: 15");
+//         break;
+//     case 12:
+//         console.log("Yaş: 12");
+//         break;
+//     case 13:
+//         console.log("Yaş: 13");
+//         break;
+//     case 14:
+//         console.log("Yaş: 14");
+//         break;
+//     default:
+//         console.log("Hiçbirisi değil");
+// }
 
 
-const ogrenciler = [
-    {
-        isim: "ali",
-        notlar: {
-            matematik: 50
-        }
-    },
-    {
-        isim: "veli",
-        notlar: {
-            matematik: 60
-        }
-    },
-    {
-        isim: "zeynep",
-        notlar: {
-            matematik: 30
-        }
-    },
-    {
-        isim: "ayşe",
-        notlar: {
-            matematik: 40
-        }
-    },
-    {
-        isim: "hasan",
-        notlar: {
-            matematik: 70
-        }
-    },
-]
-const filtered_array = ogrenciler.filter(ogrenci => ogrenci.notlar.matematik < 50);
-console.log("Matematik sonucu 50'nin altın da olan öğreciler ", filtered_array);
+
+// // ######################## DÖNGÜLER & LOOPS ###############################
+
+
+
+// const new_array = [40, 35, 50];
+
+// new_array.forEach((sayi, index) => {
+//     console.log("şu an ki sayı: ", sayi);
+//     console.log("bu sayının indexi", index);
+// });
+
+
+
+// for (let i=0; i < 8; i++){
+//     console.log("Mevcut iterasyon", i);
+// }
+// console.log("#####################################################");
+
+
+// // while döngüsü
+// let i = 0;
+// while(i < 5) {
+//     i++;
+//     console.log("i değeri 5'ten küçüktür.", i);
+// }
+
+// console.log("#####################################################");
+
+// // do-while
+// let x = 0;
+// do {
+//     x ++;
+//     console.log("x değeri 5'ten küçüktür.", x);
+// } while(x < 5);
+
+
+
+// console.log("#####################################################");
+
+
+// // fonksiyonlar
+// let sayac = 0;
+
+// function sayaciGuncelle(yeni_deger){
+//     sayac = yeni_deger;
+//     console.log("Sayacın güncel değeri->", sayac);
+// }
+
+// sayaciGuncelle(23);
+
+
+
+
+let xList = [];
+function yeniFunc() {
+    let x = 0; 
+    while(x <= 5) {
+        xList.push(x);
+        x++;
+    }
+    console.log(xList);
+}
+yeniFunc();
