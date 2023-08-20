@@ -5,6 +5,10 @@
 }
 
 body {
+    height: 100vh;
     background-color: #161616;
     color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

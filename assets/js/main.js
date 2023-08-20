@@ -466,14 +466,111 @@
 
 
 
+// EXAMPLE
+// let xList = [];
+// function yeniFunc() {
+//     let x = 0; 
+//     while(x <= 5) {
+//         xList.push(x);
+//         x++;
+//     }
+//     console.log(xList);
+// }
+// yeniFunc();
 
-let xList = [];
-function yeniFunc() {
-    let x = 0; 
-    while(x <= 5) {
-        xList.push(x);
-        x++;
-    }
-    console.log(xList);
+// ################################################################
+                        // 20-08-2023 //
+// ################################################################
+// const ikinciFonksiyon = (param1, param2) => {
+//     console.log("ikinci fonksiyon çağrıldı: ", param1 + "-" + param2);
+// }
+// ikinciFonksiyon("ilkparametre", "ikinciparametre");
+
+// function sayilariCarp(num1, num2){
+//     const carpimSonucu = num1 * num2;
+//     console.log("10 ile 5 sayısının çarpım sonucu: ",carpimSonucu);
+// }
+// sayilariCarp(10, 5);
+
+//  console.log(carpimSonucu);    scope kavramı: fonksiyon içerisinde tanımlanan değişkenler sadece fonksiyon içerisin
+
+// function sayilariBol(num1, num2){
+//     const bolme_Sonucu = num1 / num2;
+//     console.log("100 ile 10 sayısının bölme sonucu: ",bolme_Sonucu);
+// }
+// sayilariBol(100, 10);
+
+// function sayilariCikar(num1, num2){
+//     return (num1 - num2);
+// }
+// const cikartma_sonucu = sayilariCikar(50, 20);
+// console.log("Çıkartma return sonucu: ", cikartma_sonucu);
+
+
+// console.log("#####################################################");
+
+// let sayac = 0;
+// function ekranaBas(){
+//     sayac++;
+//     console.log("Sayacın güncel değeri", sayac);
+// }
+// setTimeout(ekranaBas, 5000); sayfa ilk yüklendikten 5 saniye sonra ekrana bas
+// setInterval(ekranaBas, 3000);
+
+
+// setInterval(() => {
+//     sayac++;
+//     console.log("Sayacın güncel değeri", sayac)
+// }, 3000);
+
+
+// const arrowFunc = (sayi1, sayi2) => sayi1 * sayi2
+// const carpim_sonucu = arrowFunc(20,3);
+// console.log("Çarpım sonucu",carpim_sonucu)
+
+
+    // let xList = [];
+    // let x = 0;
+    // setInterval(() =>{
+    //     while(x < 10){
+    //         x++;
+    //         xList.push(x);
+    //         console.log("Array'in güncel hali:", xList)
+    //     }
+    // }, 1000);
+
+
+
+
+    // #######################  DOM ( Document Object Model ) MANUPULASYONU #######################
+
+
+
+// const ilk_eleman = document.getElementById("firstText");
+// console.log(ilk_eleman);
+
+
+// function yaziyiGuncelle(){
+//     document.getElementById("ikinci").innerHTML = "Frontend Dev"
+//     ucuncu_eleman[0].innerHTML = "burası yeni geldi";
+// }
+// setTimeout(yaziyiGuncelle,2000)
+
+// const ucuncu_eleman = document.getElementsByClassName("ucuncu");
+
+// console.log(ucuncu_eleman);
+
+
+
+const myName = document.getElementById("my-Name");
+function adimiYazdir() {
+    myName.innerHTML = "UFUK AYHAN SÖNMEZ";
+    
 }
-yeniFunc();
+setTimeout(adimiYazdir, 2000);
+
+function yaziGuncelle() {
+    const yenigun = document.getElementsByClassName("ayniClass");
+    yenigun[1].innerHTML = "20.08.23";
+}
+setTimeout(yaziGuncelle, 2000);
