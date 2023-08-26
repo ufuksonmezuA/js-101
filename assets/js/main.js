@@ -562,15 +562,75 @@
 
 
 
-const myName = document.getElementById("my-Name");
-function adimiYazdir() {
-    myName.innerHTML = "UFUK AYHAN SÖNMEZ";
+// const myName = document.getElementById("my-Name");
+// function adimiYazdir() {
+//     myName.innerHTML = "UFUK AYHAN SÖNMEZ";
     
-}
-setTimeout(adimiYazdir, 2000);
+// }
+// setTimeout(adimiYazdir, 2000);
 
-function yaziGuncelle() {
-    const yenigun = document.getElementsByClassName("ayniClass");
-    yenigun[1].innerHTML = "20.08.23";
-}
-setTimeout(yaziGuncelle, 2000);
+// function yaziGuncelle() {
+//     const yenigun = document.getElementsByClassName("ayniClass");
+//     yenigun[1].innerHTML = "20.08.23";
+// }
+// setTimeout(yaziGuncelle, 2000);
+
+// ################################################################
+                        // 26-08-2023 //
+// ################################################################
+
+// const first_person = {
+//     firstName: "ali",
+//     lastName: "Yılmaz",
+//     age: 18,
+//     isStudent:  false,
+//     grades: {},
+//     addresses: {},
+//     seyHello: function(isim){
+//         console.log("Merhaba " + isim)
+//     },
+//     bornYear: function(){
+//         return 2023 - this.age
+//     },
+//     getFullName: function(){
+            // return this.firstName + " " + this.lastName
+//          return `Kullanıcının adı: ${this.firstName} ve kullanıcının soyadı: ${this.lastName}`
+//     },
+// }
+
+// console.log(first_object.seyHello("Ahmet"));
+// console.log(first_object.firstName);
+
+// console.log("Doğum Yılı ", first_person.bornYear());
+// console.log(first_person.getFullName());
+
+// function selamSoyle(isim, yas){
+//     console.log("Merhaba " + isim + " Yaşı " + yas);
+// }
+// selamSoyle("Mehmet", 25);
+
+// const FirstNameVarMi = first_person.hasOwnProperty("firstName");
+// console.log("firstName Field'ı var mı?", FirstNameVarMi);
+
+// const EmailVarMi = first_person.hasOwnProperty("email");
+// console.log("eMail Field'ı var mı?", EmailVarMi);
+
+// const kullaniciAdi = first_person.firstName;
+// const kullaniciSoyadi = first_person.lastName;
+// const kullaniciYasi = first_person.age
+// const kullaniciOgrenciMi = first_person.isStudent
+// console.log(kullaniciAdi + kullaniciSoyadi + kullaniciYasi + kullaniciOgrenciMi);
+
+// const {firstName, lastName, age, isStudent} = first_person;
+// console.log(firstName+lastName+age+isStudent);
+
+// const kopyaobje = {
+//     ...first_person, 
+//     email: "test@gmail.com",
+//     firstName: "Mehmet"
+// };
+
+// kopyaobje.firstName = "Ahmet";
+// delete kopyaobje.firstName;
+
+// console.log("Kopyalanmış Obje", kopyaobje);
