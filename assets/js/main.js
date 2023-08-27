@@ -634,3 +634,59 @@
 // delete kopyaobje.firstName;
 
 // console.log("Kopyalanmış Obje", kopyaobje);
+
+
+
+const p_elemani = document.getElementById("selam");
+// console.log(p_elemani);
+
+const h_elemani = document.getElementsByClassName("hava");
+// console.log(h_elemani);
+
+const radio_elemani = document.getElementsByName("sozlesme");
+// console.log(radio_elemani);
+
+
+const alinacaklar_listesi = document.querySelector(".alinacaklar");
+// console.log(alinacaklar_listesi);
+
+const alinacaklar_listesi2 = document.querySelectorAll(".alinacaklar");
+// console.log(alinacaklar_listesi2);
+
+const urun =  document.querySelectorAll("#urun");
+// console.log(urun);
+
+const gorev_elemani = document.querySelector(".gorev");
+let urun_parent = gorev_elemani?.parentNode;
+// console.log(gorev_elemani);
+// console.log("", urun_parent);
+
+
+const gorev_listesi = document.querySelector("#gorevler");
+// console.log(gorev_listesi);
+
+const ilk_gorev = gorev_listesi.firstElementChild
+// console.log(ilk_gorev);
+
+const ikinci_gorev = ilk_gorev.nextElementSibling;
+// console.log(ikinci_gorev);
+
+const son_gorev = gorev_listesi.lastElementChild;
+// console.log(son_gorev);
+
+const gorevler = gorev_listesi.children;
+// console.log(gorevler);
+// console.log("3. görev", gorevler[2]);
+
+const fatura_elemani = document.querySelector(".fatura");
+// console.log(fatura_elemani.previousElementSibling);
+// console.log(fatura_elemani.nextElementSibling);
+
+
+
+
+let google_linki = document.querySelector(".besinci-kisim");
+function yeniSekmedeAc(){
+    google_linki.setAttribute("target","_blank");
+}
+setTimeout(yeniSekmedeAc(), 5000);
