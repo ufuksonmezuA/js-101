@@ -635,58 +635,142 @@
 
 // console.log("Kopyalanmış Obje", kopyaobje);
 
+// const p_elemani = document.getElementById("selam");
+// // console.log(p_elemani);
 
+// const h_elemani = document.getElementsByClassName("hava");
+// // console.log(h_elemani);
 
-const p_elemani = document.getElementById("selam");
-// console.log(p_elemani);
+// const radio_elemani = document.getElementsByName("sozlesme");
+// // console.log(radio_elemani);
 
-const h_elemani = document.getElementsByClassName("hava");
-// console.log(h_elemani);
+// const alinacaklar_listesi = document.querySelector(".alinacaklar");
+// // console.log(alinacaklar_listesi);
 
-const radio_elemani = document.getElementsByName("sozlesme");
-// console.log(radio_elemani);
+// const alinacaklar_listesi2 = document.querySelectorAll(".alinacaklar");
+// // console.log(alinacaklar_listesi2);
 
+// const urun =  document.querySelectorAll("#urun");
+// // console.log(urun);
 
-const alinacaklar_listesi = document.querySelector(".alinacaklar");
-// console.log(alinacaklar_listesi);
+// const gorev_elemani = document.querySelector(".gorev");
+// let urun_parent = gorev_elemani?.parentNode;
+// // console.log(gorev_elemani);
+// // console.log("", urun_parent);
 
-const alinacaklar_listesi2 = document.querySelectorAll(".alinacaklar");
-// console.log(alinacaklar_listesi2);
+// const gorev_listesi = document.querySelector("#gorevler");
+// // console.log(gorev_listesi);
 
-const urun =  document.querySelectorAll("#urun");
-// console.log(urun);
+// const ilk_gorev = gorev_listesi.firstElementChild
+// // console.log(ilk_gorev);
 
-const gorev_elemani = document.querySelector(".gorev");
-let urun_parent = gorev_elemani?.parentNode;
-// console.log(gorev_elemani);
-// console.log("", urun_parent);
+// const ikinci_gorev = ilk_gorev.nextElementSibling;
+// // console.log(ikinci_gorev);
 
+// const son_gorev = gorev_listesi.lastElementChild;
+// // console.log(son_gorev);
 
-const gorev_listesi = document.querySelector("#gorevler");
-// console.log(gorev_listesi);
+// const gorevler = gorev_listesi.children;
+// // console.log(gorevler);
+// // console.log("3. görev", gorevler[2]);
 
-const ilk_gorev = gorev_listesi.firstElementChild
-// console.log(ilk_gorev);
+// const fatura_elemani = document.querySelector(".fatura");
+// // console.log(fatura_elemani.previousElementSibling);
+// // console.log(fatura_elemani.nextElementSibling);
 
-const ikinci_gorev = ilk_gorev.nextElementSibling;
-// console.log(ikinci_gorev);
+// let google_linki = document.querySelector(".besinci-kisim");
+// function yeniSekmedeAc(){
+//     google_linki.setAttribute("target","_blank");
+// }
+// setTimeout(yeniSekmedeAc(), 5000);
 
-const son_gorev = gorev_listesi.lastElementChild;
-// console.log(son_gorev);
+// console.log("##############################");
+// console.log("##############################");
+// console.log("##############################");
 
-const gorevler = gorev_listesi.children;
-// console.log(gorevler);
-// console.log("3. görev", gorevler[2]);
+const firstTag = document.querySelector(".first-link");
+console.log(firstTag);
+firstTag.setAttribute("href", "https://google.com");
 
-const fatura_elemani = document.querySelector(".fatura");
-// console.log(fatura_elemani.previousElementSibling);
-// console.log(fatura_elemani.nextElementSibling);
+firstTag.style.color = "green";
+console.log("Link'in rengi ",firstTag.style.color);
 
+console.log("firstTag elemının class'ı",firstTag.className);
+firstTag.className = firstTag.className + " yeni";
+console.log("firstTag elemının class'ı güncellendi", firstTag.className);
 
+console.log("firstTag elemının tüm class'ları ", firstTag.classList);
 
-
-let google_linki = document.querySelector(".besinci-kisim");
-function yeniSekmedeAc(){
-    google_linki.setAttribute("target","_blank");
+firstTag.classList.add("deneme");
+firstTag.classList.remove("gizle");
+firstTag.classList.replace("text","text-3-xl");
+for (let cssClass of firstTag.classList){
+    console.log("firstTag' in classı", cssClass)
 }
-setTimeout(yeniSekmedeAc(), 5000);
+
+firstTag.classList.forEach(item => console.log("", item));
+
+//////
+
+// console.log("##############################");
+// console.log("##############################");
+
+let loadingElm = document.querySelector("#loading");
+console.log("loading gif'inin yüksekliği: ", loadingElm.getAttribute("height"));
+function hideElm(){
+    // loadingElm.setAttribute("height", 1);
+    // loadingElm.setAttribute("width", 1);
+    loadingElm.className = loadingElm.className + " hidden";
+    console.log("loading gif'inin yeni yüksekliği: ", loadingElm.getAttribute("height"));
+    firstTag.removeAttribute("href");
+}
+
+function showElm(){
+    loadingElm.classList.replace("hidden", "block");
+    console.log(loadingElm.classList.contains("block")); // elemanın için de block elemanı var mı yokmu kontrol eder, true yada false seklin de döner.
+}
+console.log(loadingElm.classList.contains("block"));
+
+setTimeout(hideElm, 3000);
+setTimeout(showElm, 5000);
+console.log("link adresi: ", firstTag.getAttribute("href"));
+
+// ################################################################
+
+//const menuElm = document.querySelector("#menu");
+const menuElm = document.getElementById("menu");
+console.log(menuElm.innerHTML);
+
+console.log(menuElm.textContent);
+
+const selamElm = document.querySelector(".selamTxt");
+
+function updateSelamTxt (){
+    selamElm.textContent = "Selam, Güncellendi."
+
+    let newLiElement = document.createElement("li");
+    // newLiElement.textContent= "yeni Eleman";
+
+    let liLİnkElm = document.createElement("a");
+    liLİnkElm.setAttribute("href", "https://twitter.com");
+    liLİnkElm.textContent = "Twitter";
+
+    newLiElement.appendChild(liLİnkElm)
+    menuElm.appendChild(newLiElement);
+
+    const homeElm = document.querySelector(".homeElm");
+
+    const newPElm = document.querySelector("p");
+    newPElm.textContent = "Yeni bir p elamamı";
+    homeElm.after(newPElm)
+
+    const silinecekEleman = document.querySelector("#merhabaTxt")
+    menuElm.removeChild(silinecekEleman)
+
+    const cikisYapElm = document.createElement("lş");
+    cikisYapElm.textContent = "Çıkış yap";
+
+    const girisYapElm = document.querySelector(".auth");
+    menuElm.replaceChild(cikisYapElm, girisYapElm);
+}
+setTimeout(updateSelamTxt, 3000)
