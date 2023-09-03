@@ -9,9 +9,9 @@ ul {
 
 body {
     height: 100vh;
-    /*background-color: #161616;
+    background-color: #161616;
     color: #FAFAFA;
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; */
@@ -20,6 +20,13 @@ body {
     font-size: 1rem;
 }
 
+input  {
+    background-color: #161616;
+    color: inherit;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
 .popup {
     background-color: #363636;
     padding: 2rem 1rem;
