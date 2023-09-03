@@ -9,18 +9,27 @@ ul {
 
 body {
     height: 100vh;
-    background-color: #161616;
+    /*background-color: #161616;
     color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     gap: 2rem;
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
 }
 
-
-.gizle {
-    display: none;
+.popup {
+    background-color: #363636;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 50vw;
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem #242424;
 }

@@ -386,7 +386,7 @@
 
 // if (child_age > 18) {
 //     console.log("Kampayadan muaf");
-// }
+//}
 // else if (child_age == 13 ) {
 //     console.log("Extra kampanya")
 // }
@@ -414,7 +414,7 @@
 
 
 
-// // ######################## DÖNGÜLER & LOOPS ###############################
+// ######################## DÖNGÜLER & LOOPS ###############################
 
 
 
@@ -433,7 +433,7 @@
 // console.log("#####################################################");
 
 
-// // while döngüsü
+// while döngüsü
 // let i = 0;
 // while(i < 5) {
 //     i++;
@@ -442,7 +442,7 @@
 
 // console.log("#####################################################");
 
-// // do-while
+// do-while
 // let x = 0;
 // do {
 //     x ++;
@@ -454,7 +454,7 @@
 // console.log("#####################################################");
 
 
-// // fonksiyonlar
+// fonksiyonlar
 // let sayac = 0;
 
 // function sayaciGuncelle(yeni_deger){
@@ -636,47 +636,47 @@
 // console.log("Kopyalanmış Obje", kopyaobje);
 
 // const p_elemani = document.getElementById("selam");
-// // console.log(p_elemani);
+// console.log(p_elemani);
 
 // const h_elemani = document.getElementsByClassName("hava");
-// // console.log(h_elemani);
+// console.log(h_elemani);
 
 // const radio_elemani = document.getElementsByName("sozlesme");
-// // console.log(radio_elemani);
+// console.log(radio_elemani);
 
 // const alinacaklar_listesi = document.querySelector(".alinacaklar");
-// // console.log(alinacaklar_listesi);
+// console.log(alinacaklar_listesi);
 
 // const alinacaklar_listesi2 = document.querySelectorAll(".alinacaklar");
-// // console.log(alinacaklar_listesi2);
+// console.log(alinacaklar_listesi2);
 
 // const urun =  document.querySelectorAll("#urun");
-// // console.log(urun);
+// console.log(urun);
 
 // const gorev_elemani = document.querySelector(".gorev");
 // let urun_parent = gorev_elemani?.parentNode;
-// // console.log(gorev_elemani);
-// // console.log("", urun_parent);
+// console.log(gorev_elemani);
+// console.log("", urun_parent);
 
 // const gorev_listesi = document.querySelector("#gorevler");
-// // console.log(gorev_listesi);
+// console.log(gorev_listesi);
 
 // const ilk_gorev = gorev_listesi.firstElementChild
-// // console.log(ilk_gorev);
+// console.log(ilk_gorev);
 
 // const ikinci_gorev = ilk_gorev.nextElementSibling;
-// // console.log(ikinci_gorev);
+// console.log(ikinci_gorev);
 
 // const son_gorev = gorev_listesi.lastElementChild;
-// // console.log(son_gorev);
+// console.log(son_gorev);
 
 // const gorevler = gorev_listesi.children;
-// // console.log(gorevler);
-// // console.log("3. görev", gorevler[2]);
+// console.log(gorevler);
+// console.log("3. görev", gorevler[2]);
 
 // const fatura_elemani = document.querySelector(".fatura");
-// // console.log(fatura_elemani.previousElementSibling);
-// // console.log(fatura_elemani.nextElementSibling);
+// console.log(fatura_elemani.previousElementSibling);
+// console.log(fatura_elemani.nextElementSibling);
 
 // let google_linki = document.querySelector(".besinci-kisim");
 // function yeniSekmedeAc(){
@@ -684,68 +684,72 @@
 // }
 // setTimeout(yeniSekmedeAc(), 5000);
 
-// console.log("##############################");
-// console.log("##############################");
-// console.log("##############################");
-
-const firstTag = document.querySelector(".first-link");
-console.log(firstTag);
-firstTag.setAttribute("href", "https://google.com");
-
-firstTag.style.color = "green";
-console.log("Link'in rengi ",firstTag.style.color);
-
-console.log("firstTag elemının class'ı",firstTag.className);
-firstTag.className = firstTag.className + " yeni";
-console.log("firstTag elemının class'ı güncellendi", firstTag.className);
-
-console.log("firstTag elemının tüm class'ları ", firstTag.classList);
-
-firstTag.classList.add("deneme");
-firstTag.classList.remove("gizle");
-firstTag.classList.replace("text","text-3-xl");
-for (let cssClass of firstTag.classList){
-    console.log("firstTag' in classı", cssClass)
-}
-
-firstTag.classList.forEach(item => console.log("", item));
-
-//////
+// ################################################################
+                        // 02-092023 //
+// ################################################################
 
 // console.log("##############################");
 // console.log("##############################");
+// console.log("##############################");
 
-let loadingElm = document.querySelector("#loading");
-console.log("loading gif'inin yüksekliği: ", loadingElm.getAttribute("height"));
-function hideElm(){
-    // loadingElm.setAttribute("height", 1);
-    // loadingElm.setAttribute("width", 1);
-    loadingElm.className = loadingElm.className + " hidden";
-    console.log("loading gif'inin yeni yüksekliği: ", loadingElm.getAttribute("height"));
-    firstTag.removeAttribute("href");
-}
+// const firstTag = document.querySelector(".first-link");
+// console.log(firstTag);
+// firstTag.setAttribute("href", "https://google.com");
 
-function showElm(){
-    loadingElm.classList.replace("hidden", "block");
-    console.log(loadingElm.classList.contains("block")); // elemanın için de block elemanı var mı yokmu kontrol eder, true yada false seklin de döner.
-}
-console.log(loadingElm.classList.contains("block"));
+// firstTag.style.color = "green";
+// console.log("Link'in rengi ",firstTag.style.color);
 
-setTimeout(hideElm, 3000);
-setTimeout(showElm, 5000);
-console.log("link adresi: ", firstTag.getAttribute("href"));
+// console.log("firstTag elemının class'ı",firstTag.className);
+// firstTag.className = firstTag.className + " yeni";
+// console.log("firstTag elemının class'ı güncellendi", firstTag.className);
+
+// console.log("firstTag elemının tüm class'ları ", firstTag.classList);
+
+// firstTag.classList.add("deneme");
+// firstTag.classList.remove("gizle");
+// firstTag.classList.replace("text","text-3-xl");
+// for (let cssClass of firstTag.classList){
+//     console.log("firstTag' in classı", cssClass)
+// }
+
+// firstTag.classList.forEach(item => console.log("", item));
+
+/*  ////////////////////////////////////////////////////////////////  */
+
+// console.log("##############################");
+// console.log("##############################");
+
+// let loadingElm = document.querySelector("#loading");
+// console.log("loading gif'inin yüksekliği: ", loadingElm.getAttribute("height"));
+// function hideElm(){
+//     loadingElm.setAttribute("height", 1);
+//     loadingElm.setAttribute("width", 1);
+//     loadingElm.className = loadingElm.className + " hidden";
+//     console.log("loading gif'inin yeni yüksekliği: ", loadingElm.getAttribute("height"));
+//     firstTag.removeAttribute("href");
+// }
+
+// function showElm(){
+//     loadingElm.classList.replace("hidden", "block");
+//     console.log(loadingElm.classList.contains("block")); // elemanın için de block elemanı var mı yokmu kontrol eder, true yada false seklin de döner.
+// }
+// console.log(loadingElm.classList.contains("block"));
+
+// setTimeout(hideElm, 3000);
+// setTimeout(showElm, 5000);
+// console.log("link adresi: ", firstTag.getAttribute("href"));
 
 // ################################################################
 
 //const menuElm = document.querySelector("#menu");
-const menuElm = document.getElementById("menu");
-console.log(menuElm.innerHTML);
+// const menuElm = document.getElementById("menu");
+// console.log(menuElm.innerHTML);
 
-console.log(menuElm.textContent);
+// console.log(menuElm.textContent);
 
-const selamElm = document.querySelector(".selamTxt");
+// const selamElm = document.querySelector(".selamTxt");
 
-function updateSelamTxt (){
+/*function updateSelamTxt (){
     selamElm.textContent = "Selam, Güncellendi."
 
     let newLiElement = document.createElement("li");
@@ -773,4 +777,78 @@ function updateSelamTxt (){
     const girisYapElm = document.querySelector(".auth");
     menuElm.replaceChild(cikisYapElm, girisYapElm);
 }
-setTimeout(updateSelamTxt, 3000)
+setTimeout(updateSelamTxt, 3000)*/
+
+// ################################################################
+                        // 03-092023 //
+// ################################################################
+
+let girisButonu = document.querySelector("#hesapOlustur");
+let uyeOlButonuPopup = document.querySelector("#uyeol-butonu");
+let popElm = document.querySelector("#popupWrapper");
+
+
+const kullaniciAdiTextfield = document.querySelector("#kullaniciadi");
+const emailtextfield = document.querySelector("#email");
+const passwordtextfield = document.querySelector("#sifre");
+
+let testElm = document.querySelector("#test");
+
+function tiklamaFonksiyonu (){
+    popElm.classList.replace("hidden", "block");
+}
+
+function tiklamaFonksiyonuPopup(){
+    popElm.classList.replace("block", "hidden");
+}
+
+function testFonksiyonu(){
+    alert("uyarı");
+}
+
+function kolayFonksiyon(){
+    alert("click eventini tanımlamak için pratik bir yol")
+}
+
+let registerForm = {
+    username: "",
+    email: "",
+    password: ""
+}
+
+girisButonu.addEventListener("click", tiklamaFonksiyonu);
+uyeOlButonuPopup.addEventListener("click", tiklamaFonksiyonuPopup);
+testElm.addEventListener("click", testFonksiyonu);
+
+kullaniciAdiTextfield.addEventListener("keyup", (event) => {
+    if (event.key === "Escape") {
+        tiklamaFonksiyonuPopup();
+        kullaniciAdiTextfield.value = "";
+    }
+    else {
+        registerForm.username = kullaniciAdiTextfield.value;
+    }
+    console.log(registerForm)
+})
+
+emailtextfield.addEventListener("keyup", (event) => {
+    if (event.key === "Escape") {
+        tiklamaFonksiyonuPopup();
+        emailtextfield.value = "";
+    }
+    else {
+        registerForm.email = emailtextfield.value;
+    }
+    console.log(registerForm)
+})
+
+passwordtextfield.addEventListener("keyup", (event) => {
+    if (event.key === "Escape") {
+        tiklamaFonksiyonuPopup();
+        passwordtextfield.value = "";
+    }
+    else {
+        registerForm.password = passwordtextfield.value;
+    }
+    console.log(registerForm)
+})
